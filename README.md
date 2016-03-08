@@ -23,10 +23,4 @@ Depending on time spent.
 
 The aim is to "compute" time quality per activity.
 
-### TODO
-
-- google calendar importer
-- google calendar sync with Zapier
-- UI
-- Reporting
-- Zapier?
+[TODOs](TODO.md)

@@ -1,11 +1,21 @@
 ## TODOS
 
-- [ ] stack init (gems, etc)
-- [ ] global conf (user fetching time)
-- [ ] Google calendar "current day events fetching"
-  - see https://developers.google.com/google-apps/calendar/quickstart/ruby#step_2_install_the_google_client_library
-  - http://www.rubydoc.info/github/google/google-api-ruby-client/Google/Apis/CalendarV3/CalendarService#list_events-instance_method
-  - https://developers.google.com/api-client-library/ruby/auth/web-app#overview
-- [ ] sentiment API
-- [ ] sentiment analysis/reporting
-- [ ] UI (mobile app ?)
+- Electron desktop app
+  - Events fetching + auth
+    - [ ] oauth process
+      - https://developers.google.com/google-apps/calendar/quickstart/nodejs#prerequisites
+    - [ ] store `user_id`
+    - [ ] fetch event
+  - Events sorting
+    - tinder like UI
+    - send data to AWS endpoint
+  - Mood summary/analysis
+    - fetch data from api for given date range
+    - UI for display
+    - suggestions ?
+
+- AWS API
+  - POST /mood/event
+    - params = `event_id, summary, user_id, start, end`
+  - GET /mood/summary?start=...&end=...
+  
